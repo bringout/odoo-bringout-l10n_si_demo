@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Assets -->
+        <record id="si_acc_1000" model="account.account.template">
+            <field name="code">100000</field>
+            <field name="name">Blagajna (Cash)</field>
+            <field name="account_type">asset_cash</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_acc_1100" model="account.account.template">
+            <field name="code">110000</field>
+            <field name="name">Transakcijski račun (Bank)</field>
+            <field name="account_type">asset_cash</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_acc_1200" model="account.account.template">
+            <field name="code">120000</field>
+            <field name="name">Terjatve do kupcev (Accounts Receivable)</field>
+            <field name="account_type">asset_receivable</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+            <field name="reconcile" eval="True"/>
+        </record>
+
+        <record id="si_acc_1600" model="account.account.template">
+            <field name="code">160000</field>
+            <field name="name">DDV vhodni (VAT deductible)</field>
+            <field name="account_type">asset_current</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <!-- Liabilities -->
+        <record id="si_acc_2200" model="account.account.template">
+            <field name="code">220000</field>
+            <field name="name">Obveznosti do dobaviteljev (Accounts Payable)</field>
+            <field name="account_type">liability_payable</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+            <field name="reconcile" eval="True"/>
+        </record>
+
+        <record id="si_acc_2600" model="account.account.template">
+            <field name="code">260000</field>
+            <field name="name">DDV izhodni (VAT payable)</field>
+            <field name="account_type">liability_current</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_acc_2500" model="account.account.template">
+            <field name="code">250000</field>
+            <field name="name">Obveznosti za plače (Payroll payable)</field>
+            <field name="account_type">liability_current</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <!-- Income -->
+        <record id="si_acc_7600" model="account.account.template">
+            <field name="code">760000</field>
+            <field name="name">Prihodki od prodaje (Sales income)</field>
+            <field name="account_type">income</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <!-- Expense -->
+        <record id="si_acc_4000" model="account.account.template">
+            <field name="code">400000</field>
+            <field name="name">Stroški materiala (Material cost)</field>
+            <field name="account_type">expense</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_acc_4700" model="account.account.template">
+            <field name="code">470000</field>
+            <field name="name">Stroški plač (Payroll expense)</field>
+            <field name="account_type">expense</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_acc_5000" model="account.account.template">
+            <field name="code">500000</field>
+            <field name="name">Nabavna vrednost prodanih proizvodov (COGS)</field>
+            <field name="account_type">expense_direct_cost</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <!-- Equity -->
+        <record id="si_acc_9500" model="account.account.template">
+            <field name="code">950000</field>
+            <field name="name">Preneseni poslovni izid (Retained earnings)</field>
+            <field name="account_type">equity</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+    </data>
+</odoo>

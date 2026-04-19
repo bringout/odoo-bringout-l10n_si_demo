@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Sales / Output VAT (DDV) -->
+        <record id="si_ddv_22_sale" model="account.tax.template">
+            <field name="name">DDV 22% (prodaja)</field>
+            <field name="description">DDV 22%</field>
+            <field name="amount">22</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_ddv_9_5_sale" model="account.tax.template">
+            <field name="name">DDV 9.5% (prodaja)</field>
+            <field name="description">DDV 9.5%</field>
+            <field name="amount">9.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_ddv_5_sale" model="account.tax.template">
+            <field name="name">DDV 5% (prodaja)</field>
+            <field name="description">DDV 5%</field>
+            <field name="amount">5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_ddv_0_export_sale" model="account.tax.template">
+            <field name="name">DDV 0% (izvoz)</field>
+            <field name="description">DDV 0% izvoz</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <!-- Purchase / Input VAT -->
+        <record id="si_ddv_22_purchase" model="account.tax.template">
+            <field name="name">DDV 22% (nabava)</field>
+            <field name="description">DDV 22%</field>
+            <field name="amount">22</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_ddv_9_5_purchase" model="account.tax.template">
+            <field name="name">DDV 9.5% (nabava)</field>
+            <field name="description">DDV 9.5%</field>
+            <field name="amount">9.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+        <record id="si_ddv_5_purchase" model="account.tax.template">
+            <field name="name">DDV 5% (nabava)</field>
+            <field name="description">DDV 5%</field>
+            <field name="amount">5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_si_demo"/>
+        </record>
+
+    </data>
+</odoo>
